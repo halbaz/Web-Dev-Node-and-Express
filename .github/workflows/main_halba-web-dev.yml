@@ -21,8 +21,9 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: npm install, build, and test
+      - name: npm install
         run: |
+          node 02-meadowlark.js
           node 01-helloworld.js
       
       - name: Upload artifact for deployment job
